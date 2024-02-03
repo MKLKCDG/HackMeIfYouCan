@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Welcome to the Blog</h1>
+    {% if posts %}
+        <ul>
+            {% for post in posts %}
+                <li> <a href={{post.id}}>{{ post.title }}</a> </li>
+                <p>{{ post.content }}</p>
+            {% endfor %}
+        </ul>
+        <div class="gizli">
+            MXOVHCDU{ZHOFRPH_U3G_W34P}
+         </div>
+    {% else %}
+        <p>No posts found.</p>
+    {% endif %}
+{% endblock %}

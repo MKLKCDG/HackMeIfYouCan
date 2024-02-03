@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>About Me</h1>
+    <p>
+
+        </p>
+    {% if abouts %}
+    
+    <ul>
+        {% for about in abouts %}
+        <p>{{ about.about_text }}</p>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No about found.</p>
+{% endif %}
+
+{% endblock %}

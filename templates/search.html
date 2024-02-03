@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Search Results {{search_query|safe}}</h1>
+    <form method="post" action="{{ url_for('search') }}">
+    </form>
+    {% if posts %}
+        <ul>
+             {% for post in posts %}
+                <li>{{ post.title }}</li>
+                <p>{{ post.content }}</p>
+                
+                
+
+            {% endfor %} 
+
+        </ul>
+    {% else %}
+        <p>No results found for your search query.</p>
+        <p>{{results}}</p>
+        
+    {% endif %} 
+{% endblock %}

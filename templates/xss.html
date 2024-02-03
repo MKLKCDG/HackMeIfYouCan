@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% for tweet in tweets %}
+    <h1 class="{{ tweet }}">{{ tweet }}!</h1>
+    <a href="{{ tweet }}">Like</a>
+  {% endfor %}
+
+  <form method="post" action="{{ url_for('xss') }}">
+    <div class="search-box">
+      <input type="text" name="tweet" placeholder="Arama yap...">
+      <input type="submit" value="Ara">
+    </div>
+  </form>
+{% endblock %}

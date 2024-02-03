@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    position: fixed;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+}
+
+.search-box {
+    padding: 20px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.gizli {
+    opacity: 0; 
+}
+

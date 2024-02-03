@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Login</h1>
+    
+    <form id="loginForm" method="post" action="{{ url_for('login') }}">
+        <label>Email:</label>
+        <input type="text" name="mail"><br>
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+        <button class="gizli" type="submit" disabled>login</button>
+    </form>
+    <p class="gizli">burda birşey eksik ama ne</p>
+    <p class="gizli">https://github.com/danielmiessler/SecLists/blob/master/Passwords/Common-Credentials/10-million-password-list-top-100.txt</p>
+    <script>
+        var _0x585336=_0x4c47;(function(_0x39f7b6,_0x4a3d32){var _0x4e5bb7=_0x4c47,_0x230efb=_0x39f7b6();while(!![]){try{var _0x470cd0=-parseInt(_0x4e5bb7(0xa4))/0x1+-parseInt(_0x4e5bb7(0xaf))/0x2*(-parseInt(_0x4e5bb7(0xa5))/0x3)+parseInt(_0x4e5bb7(0xa3))/0x4+parseInt(_0x4e5bb7(0xab))/0x5+-parseInt(_0x4e5bb7(0xa6))/0x6*(parseInt(_0x4e5bb7(0xb1))/0x7)+parseInt(_0x4e5bb7(0xac))/0x8+-parseInt(_0x4e5bb7(0xb0))/0x9;if(_0x470cd0===_0x4a3d32)break;else _0x230efb['push'](_0x230efb['shift']());}catch(_0x235c8e){_0x230efb['push'](_0x230efb['shift']());}}}(_0x1d3e,0x30f67),document[_0x585336(0xb2)](_0x585336(0xad))[_0x585336(0xa8)](_0x585336(0xaa),function(_0x3aeb8c){var _0x303167=_0x585336;_0x3aeb8c[_0x303167(0xae)]===_0x303167(0xa9)&&_0x3aeb8c[_0x303167(0xa7)]();}));function _0x4c47(_0x2fa3bc,_0x62276b){var _0x1d3e3b=_0x1d3e();return _0x4c47=function(_0x4c47a7,_0x40b5b8){_0x4c47a7=_0x4c47a7-0xa3;var _0x225e0b=_0x1d3e3b[_0x4c47a7];return _0x225e0b;},_0x4c47(_0x2fa3bc,_0x62276b);}function _0x1d3e(){var _0x3930fd=['124945RWKcdI','3103480ejySsp','loginForm','key','32020CKpQbS','823446joZFAO','7emzumK','getElementById','245784jeqUvX','102388nGRYHu','57vOCeKG','2304762RRNnwR','preventDefault','addEventListener','Enter','keydown'];_0x1d3e=function(){return _0x3930fd;};return _0x1d3e();}
+    </script>
+{% endblock %}

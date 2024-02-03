@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="sidebar">
+        <ul>
+            <h2>Jül Sezar</h2>
+            <li><a href="{{ url_for('home') }}">Ana Sayfa</a></li>
+            <li><a href="{{ url_for('about') }}">Hakkımda</a></li>
+            <li><a href="{{ url_for('admin') }}">Admin</a></li>
+            <li><a href="{{ url_for('login') }}">Giriş</a></li>
+        </ul>
+
+        <div class="search-box">
+            <form method="post" action="{{ url_for('search') }}">
+                <input type="text" name="search" placeholder="Arama yap...">
+                <input type="submit" value="Ara">
+            </form>
+        </div>
+    </div>
+
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "6619:6619"
+    depends_on:
+      - db
+    command: sh -c "sleep 5 && python main.py"
+
+  db:
+       image: mysql:8.0
+
+       environment:
+           MYSQL_ROOT_PASSWORD: 415263aA.!
+           MYSQL_DATABASE: blog
+       ports:
+           - 3306:3306
+
+       volumes:
+         - ./blog.sql:/docker-entrypoint-initdb.d/blog.sql    
+

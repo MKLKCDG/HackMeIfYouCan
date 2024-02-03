@@ -1,0 +1,7 @@
+User-agent: *   
+Allow: 
+Disallow: 
+
+
+
+SIBERVATAN{Robots_txt}
