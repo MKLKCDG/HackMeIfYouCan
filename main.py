@@ -25,7 +25,7 @@ app.config['DEBUG'] = True
 
 app.config['MYSQL_HOST'] = 'db'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_PASSWORD'] = '415263aA.!'
 app.config['MYSQL_DB'] = 'blog'
 app.config['MYSQL_CURSORCLASS'] = 'DictCursor'  # Kullanıcı dostu bir imleç
 
