@@ -22,12 +22,12 @@
    ```sh
     git clone https://github.com/MKLKCDG/HackMeIfYouCan
    ```
-2. Build docker image
+2. Build docker 
    ```sh
-    docker build -t MKLKCDG/HackMeIfYouCan .
+    docker-compose build 
    ```
 3. Run container
    ```sh
-    docker run 
+    docker-compose up 
    ```
 4. Go to http://localhost:6619
