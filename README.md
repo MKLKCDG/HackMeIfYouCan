@@ -20,11 +20,11 @@
 
 1. Clone the repo
    ```sh
-    git clone https://github.com/Yavuzlar/VulnLab
+    git clone https://github.com/MKLKCDG/HackMeIfYouCan
    ```
 2. Build docker image
    ```sh
-    docker build -t yavuzlar/vulnlab .
+    docker build -t MKLKCDG/HackMeIfYouCan .
    ```
 3. Run container
    ```sh
